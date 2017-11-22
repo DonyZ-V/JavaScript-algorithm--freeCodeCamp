@@ -194,7 +194,7 @@ mutation(["hello", "Hello"]);
 在JavaScript中，假值有false、null、0、""、undefined 和 NaN。
 function bouncer(arr) {
   return arr.filter(function(e){
-    return e!==false&&e!==null&&e!==undefined&&e!==0&&!(isNaN(e)&&typeof(e)!=="string")&&e!=="";
+    return e;
   });
 }
 bouncer([false, null, 0, NaN, undefined, ""]);
