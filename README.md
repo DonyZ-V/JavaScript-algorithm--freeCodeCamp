@@ -195,7 +195,7 @@ mutation(["hello", "Hello"]);
 ```js
 function bouncer(arr) {
   return arr.filter(function(e){
-    return e!==false&&e!==null&&e!==undefined&&e!==0&&!(isNaN(e)&&typeof(e)!=="string")&&e!=="";
+    return e;
   });
 }
 
